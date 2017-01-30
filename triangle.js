@@ -1,6 +1,9 @@
+//Making sure that we do not have any errors in our js file
 'use strict'
 
+// Creating a Constructior called Triangle
 function Triangle (side1, side2, side3){
+	//if this fucntion is called with out the word new then it will force the fucntion to be called with the word new
 	if (!(this instanceof Triangle)) {
 	return new Triangle (side1, side2, side3);
 	}
@@ -13,4 +16,5 @@ function Triangle (side1, side2, side3){
 
 };
 
+//Exporting the Triangle Object
 module.exports = Triangle;

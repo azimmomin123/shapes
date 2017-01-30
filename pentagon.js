@@ -1,6 +1,10 @@
+//Making sure that we do not have any errors in our js file
 'use strict'
 
+
+// Creating a Constructior called Pentagon
 function Pentagon (side1, side2, side3, side4, side5){
+	//if this fucntion is called with out the word new then it will force the fucntion to be called with the word new
 	if (!(this instanceof Pentagon)) {
 	return new Pentagon (side1, side2, side3, side4, side5);
 	}
@@ -13,4 +17,5 @@ function Pentagon (side1, side2, side3, side4, side5){
 	this.type = 'Pentagon';
 };
 
+//Exporting the Pentagon Object
 module.exports = Pentagon;
